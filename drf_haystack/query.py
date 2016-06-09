@@ -122,8 +122,8 @@ class FilterQueryBuilder(BaseQueryBuilder):
                 fields = self.view.serializer_class.Meta.fields
                 exclude = self.view.serializer_class.Meta.exclude
                 search_fields = self.view.serializer_class.Meta.search_fields
-
-                if ((fields or search_fields) and base_param not in chain(fields, search_fields)) or base_param in exclude or not value:
+                queryable_fields = self.view.serializer_class.Meta.queryable_fields
+                if (((fields or search_fields) and base_param not in chain(fields, search_fields)) or base_param in exclude ) or (queryable_fields and base_param not in queryable_fields) or not value:
                     continue
 
             field_queries = []
