@@ -7,7 +7,7 @@ Build status
 [![Build Status](https://travis-ci.org/inonit/drf-haystack.svg?branch=master)](https://travis-ci.org/inonit/drf-haystack)
 [![Coverage Status](https://coveralls.io/repos/github/inonit/drf-haystack/badge.svg?branch=master)](https://coveralls.io/github/inonit/drf-haystack?branch=master)
 [![PyPI version](https://badge.fury.io/py/drf-haystack.svg)](https://badge.fury.io/py/drf-haystack)
-[![Documentation Status](http://readthedocs.org/projects/drf-haystack/badge/?version=latest)](https://drf-haystack.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/drf-haystack/badge/?version=latest)](http://drf-haystack.readthedocs.io/en/latest/?badge=latest)
 
 
 About
@@ -20,8 +20,8 @@ Supported versions
 ------------------
 
 - Python 2.7+ and Python 3.4+
-- ~~[All supported versions of Django](https://www.djangoproject.com/download/#supported-versions>)~~ Waiting for Django 1.9 support on Haystack
-- Haystack 2.4 and above
+- [All supported versions of Django](https://www.djangoproject.com/download/#supported-versions>)
+- Haystack 2.5 and above
 - Django REST Framework 3.2 and above
     
 

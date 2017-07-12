@@ -34,7 +34,7 @@ class HighlighterSerializer(HighlighterMixin, HaystackSerializer):
 
 class MoreLikeThisSerializer(HaystackSerializer):
 
-    more_like_this = HyperlinkedIdentityField(view_name="search3-more-like-this", read_only=True)
+    more_like_this = HyperlinkedIdentityField(view_name="search-person-mlt-more-like-this", read_only=True)
 
     class Meta:
         index_classes = [MockPersonIndex]
@@ -50,7 +50,7 @@ class MockPersonFacetSerializer(HaystackFacetSerializer):
 
     class Meta:
         index_classes = [MockPersonIndex]
-        fields = ["firstname", "lastname", "created"]
+        fields = ["firstname", "lastname", "created", "letters"]
         field_options = {
             "firstname": {},
             "lastname": {},
